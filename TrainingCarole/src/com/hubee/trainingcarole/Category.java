@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Category {
 	String name;
-	ArrayList<String> apps;
+	ArrayList<AppCatalog> apps;
 	public Category(){
-		apps=new ArrayList<String>();
+		apps=new ArrayList<AppCatalog>();
 	}
 
 }

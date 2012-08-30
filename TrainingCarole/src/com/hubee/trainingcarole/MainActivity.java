@@ -32,18 +32,18 @@ public class MainActivity extends Activity {
      myList=datasource.getAllTabletUsers();*/
         
             //Création d'un userAccounts
-           /*  User user=new User();
+            User user=new User();
              UserAccounts moi= new UserAccounts();
               user.accounts=new ArrayList<UserAccounts>();
               user.accounts.add(moi);
            
             //On insère le user que l'on vient de créer OK
-           datasource.createUser(user);*/
+     //  datasource.createUser(user);
            //User user=datasource.getUser(0);
            //ArrayList<User> user=new ArrayList<User>();
 //     ArrayList<AppCatalog> myapps=new ArrayList<AppCatalog>();
    ArrayList<Category> mycats=new ArrayList<Category>();
-             mycats=datasource.AppGroupByCatagories(2);
+             mycats=datasource.AppGroupByCatagories("adult","student");
              /* System.out.println(user.id);
               System.out.println(user.age);
               System.out.println(user.network);
@@ -52,14 +52,17 @@ public class MainActivity extends Activity {
               System.out.println(user.screenName);
               System.out.println(user.theme);
          */
-             for (int i=0;i<mycats.size();i++){
-              System.out.println(mycats.get(i).name);
-              System.out.println("espace");
-              for(int j=0;j<(mycats.get(i).apps.size());i++){
-            	  
-            	  System.out.println(mycats.get(i).apps.get(j));
-              }
+            
+            for (int i=0;i<mycats.size();i++){
+                  System.out.println("********" +mycats.get(i).name+"************");
               
+             // System.out.println(mycats.get(i).apps.size());
+                for(int j=0;j<(mycats.get(i).apps.size());j++){
+                	
+                	//System.out.println(mycats.get(i).apps.get(j).URI);
+            	  System.out.println(mycats.get(i).apps.get(j).APP+" "+mycats.get(i).apps.get(j).RankGlobal );
+              }
+             
               } 
             //  System.out.println(user.size());
                 
@@ -105,7 +108,7 @@ public class MainActivity extends Activity {
             }
         		*/
         
-       System.out.println(bool);
+      // System.out.println(bool);
               
             datasource.dbHelper.close();
     }

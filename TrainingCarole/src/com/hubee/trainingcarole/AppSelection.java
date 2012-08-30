@@ -3,11 +3,11 @@ package com.hubee.trainingcarole;
 public class AppSelection {
 	
 	public int id;
-	public int App;
-	public int Status;
-	public int User;
-	public String Added;
-	public String Updated;
+	public int tabletUser;
+	public String  added;
+	public String updatedr;
+	public int app;
+	public int status;
 	public AppSelection () {
 
 	}

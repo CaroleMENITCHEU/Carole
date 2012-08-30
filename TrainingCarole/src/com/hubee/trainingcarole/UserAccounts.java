@@ -5,9 +5,9 @@ package com.hubee.trainingcarole;
 
 public class UserAccounts {
 	public int id;
-	public String userId;
-	public String Email;
-	public String Password;
+	public String userId="kiss";
+	public String Email="kiss";
+	public String Password="kisss";
 	public UserAccounts () {
 
 	}

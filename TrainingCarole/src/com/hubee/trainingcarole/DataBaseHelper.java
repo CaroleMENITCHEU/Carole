@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DataBaseHelper  extends SQLiteOpenHelper{
-	 private static String DB_NAME = "HHLauncher03.db";
+	 private static String DB_NAME = "HHLauncher07.db";
 	
 
  //  public SQLiteDatabase myDataBase; 
